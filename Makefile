@@ -1,23 +1,22 @@
-CC = clang++
-NAME = default_test
-CT_PREF = containers
-IT_PREF = iterators
-CORE = core
-SRC =		main.cpp \
-			core/Assert.cpp
-HEADERS =	$(CT_PREF)/map.hpp \
-			$(CT_PREF)/pair.hpp \
-			$(CT_PREF)/set.hpp \
-			$(CT_PREF)/stack.hpp \
-			$(CT_PREF)/vector.hpp
-OBJ = $(SRC:.cpp=.o)
-LDFLAGS =
-FLAGS = -c -Wall -Wextra -Werror -std=c++98
+CC 			= clang++
+NAME 		= lsfr_corr_attack
+SRC 		= \
+		src/lib/lib.cpp \
+    	src/gen/gen.cpp \
+    	src/par/par.cpp \
+		src/seq/seq.cpp \
+		src/main.cpp
+HEADERS		= \
+		include/lib.hpp
+INCLUDE_DIR	= ./include
+OBJ 		= $(SRC:.cpp=.o)
+INCFLAGS 	= -I$(INCLUDE_DIR)
+FLAGS 		= -c -Wall -Wextra -Werror -std=c++17
 
 all: $(SRC) $(NAME)
 
 $(NAME): $(OBJ) $(HEADERS)
-	$(CC) $(LDFLAGS) $(OBJ) -o $@
+	$(CC) $(INCFLAGS) $(OBJ) -o $@
 
 clean:
 	rm -f $(OBJ)
@@ -31,4 +30,4 @@ run: all
 	./$(NAME)
 
 .cpp.o:
-	$(CC) $(FLAGS) $< -o $@
+	$(CC) $(INCFLAGS) $(FLAGS) $< -o $@

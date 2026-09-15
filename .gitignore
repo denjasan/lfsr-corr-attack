@@ -1,4 +1,6 @@
 *.o
 main
 tmp/
-build/
+.build/
+lsfr_corr_attack
+.vscode/
