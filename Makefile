@@ -1,10 +1,10 @@
 CC 			= clang++
 NAME 		= lsfr_corr_attack
 SRC 		= \
-		src/lib/lib.cpp \
-    	src/gen/gen.cpp \
-    	src/par/par.cpp \
-		src/seq/seq.cpp \
+		src/lib.cpp \
+    	src/gen.cpp \
+    	src/par.cpp \
+		src/seq.cpp \
 		src/main.cpp
 HEADERS		= \
 		include/lib.hpp
