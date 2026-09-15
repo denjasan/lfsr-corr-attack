@@ -1,15 +1,15 @@
 /*-------------------------------------------------------------------------
  *
- * lib.hpp
+ * seq.hpp
  *
  * IDENTIFICATION
- *    lib.hpp
+ *    seq.hpp
  *
  *-------------------------------------------------------------------------
  */
 
-#ifndef LIB_HPP
-#define LIB_HPP
+#ifndef SEQ_HPP
+#define SEQ_HPP
 
 
 #endif

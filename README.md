@@ -3,12 +3,14 @@ Implementation of a correlation attack on a given combining generator over GF(2)
 
 ## Project structore
 ```
-gf2-corr-attack/
+lsfr-corr-attack/
 ├── src/
-│   ├── lib/        # libs for all project      
-│   ├── seq/        # CPU sequential
-│   ├── par/        # OpenMP parallel
-│   └── gen/        # input data generator
+│   ├── main.cpp
+│   ├── lib.cpp     ß# functions for project      
+│   ├── seq.cpp     # CPU sequential
+│   ├── par.cpp     # OpenMP parallel
+│   └── gen.cpp     # input data generator
+├── include/        # api
 ├── Makefile
 ├── README.ru.md
 └── README.md
