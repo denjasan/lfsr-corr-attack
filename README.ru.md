@@ -14,9 +14,8 @@ gf2-corr-attack/
 └── README.md
 ```
 
-## Сборка проекта
+## Сборка и запуск проекта
 ```
 make
-./seq
-./par
+./lsfr_corr_attack
 ```
