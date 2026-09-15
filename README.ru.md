@@ -19,7 +19,7 @@ lsfr-corr-attack/
 ## Сборка и запуск проекта
 ```
 make
-./lsfr_corr_attack
+./lsfr_corr_attack seq
 ```
 
 ## Постановка задачи

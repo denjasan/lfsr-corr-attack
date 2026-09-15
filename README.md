@@ -6,7 +6,7 @@ Implementation of a correlation attack on a given combining generator over GF(2)
 lsfr-corr-attack/
 ├── src/
 │   ├── main.cpp
-│   ├── lib.cpp     ß# functions for project      
+│   ├── lib.cpp     # functions for project      
 │   ├── seq.cpp     # CPU sequential
 │   ├── par.cpp     # OpenMP parallel
 │   └── gen.cpp     # input data generator
@@ -19,5 +19,5 @@ lsfr-corr-attack/
 ## Build and run project
 ```
 make
-./lsfr_corr_attack
+./lsfr_corr_attack seq
 ```
